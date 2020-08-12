@@ -152,3 +152,8 @@ Take a look at the logs on the dashboard, It should look like this \(Note: You'l
 
 And we're done! This should be enough to get you going, remember Heroku can't do a whole lot of processing, and you can't save files \(no file database, edited json, etc\). 
 
+### Things to Mention
+
+While Heroku is free, there are a few things that you should know. Here they are:
+- Heroku uses "dyno hours" to keep your bot up and running, however free users only get 450 \(22 days\).
+- After 30 minutes of inactivity, your bot will sleep, meaning that it won't use dyno hours until something happens again \(setRandomInterval interrupts this\)
